@@ -36,7 +36,36 @@ To enable the model to process textual data, the tweets are converted into numer
 
 The chosen model architecture is a Transformer model, specifically designed as an Encoder-only model. The Transformer architecture is well-suited for capturing contextual relationships and dependencies among words within tweets. The Encoder layer acts as a powerful feature extractor, learning representations that contribute to the tweet classification task.
 
+#### 6.1 Positional Embedding layer
 Incorporating a Positional Embedding layer, the model captures the sequential order of words in tweets. This positional encoding provides crucial information about word positions, allowing the model to understand the sequential structure and process the input text effectively.
+
+#### 6.2 Model Summary
+```
+Model: "model"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_1 (InputLayer)        [(None, None)]            0         
+                                                                 
+ positional_embedding (Posit  (None, None, 256)        5162240   
+ ionalEmbedding)                                                 
+                                                                 
+ transformer_encoder (Transf  (None, None, 256)        2121248   
+ ormerEncoder)                                                   
+                                                                 
+ global_max_pooling1d_1 (Glo  (None, 256)              0         
+ balMaxPooling1D)                                                
+                                                                 
+ dropout (Dropout)           (None, 256)               0         
+                                                                 
+ dense_2 (Dense)             (None, 1)                 257       
+                                                                 
+=================================================================
+Total params: 7,283,745
+Trainable params: 7,283,745
+Non-trainable params: 0
+_________________________________________________________________
+```
 
 ## 7. Model Training and Evaluation
 
