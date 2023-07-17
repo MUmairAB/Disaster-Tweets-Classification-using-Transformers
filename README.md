@@ -2,11 +2,11 @@
 
 ## 1. Introduction
 
-Twitter has become an essential platform for real-time communication during emergencies, enabling individuals to share information about ongoing incidents. However, it is not always straightforward to determine if a tweet is genuinely indicating a disaster or if the language used is metaphorical or unrelated to actual emergencies. This ambiguity poses a challenge for organizations and agencies that rely on programmatic monitoring of Twitter to identify and respond to real emergencies promptly. This project aims to develop a machine learning model that accurately predicts whether a tweet is about a real disaster or not.
+Twitter has become an essential platform for real-time communication during emergencies, enabling individuals to share information about ongoing incidents. However, it is not always straightforward to determine if a tweet is genuinely indicating a disaster or if the language used is metaphorical or unrelated to actual emergencies. This ambiguity poses a challenge for organizations and agencies that rely on programmatic monitoring of Twitter to identify and respond to real emergencies promptly. This project aims to develop a machine-learning model that accurately predicts whether a tweet is about a real disaster or not.
 
 ## 2. Problem Description:
 
-The problem at hand is to develop a machine learning model that can accurately predict whether a given tweet is about a real disaster or not. 
+The problem at hand is to develop a machine-learning model that can accurately predict whether a given tweet is about a real disaster or not. 
 
 ## 3. Dataset Description
 
@@ -16,7 +16,7 @@ The project utilizes a [dataset](https://www.kaggle.com/competitions/nlp-getting
 - A **keyword** from that tweet (although this may be blank!)
 - The **location** the tweet was sent from (may also be blank)
 
-The columns details is a swloows:
+The columns details are as follows:
 - **id** - a unique identifier for each tweet
 - **text** - the text of the tweet
 - **location** - the location the tweet was sent from (may be blank)
@@ -26,6 +26,23 @@ The columns details is a swloows:
 ## 4. Exploratory Data Analysis (EDA)
 
 During the EDA phase, the dataset is analyzed to gain insights and understanding. This includes assessing the distribution of tweet lengths, examining the balance of the target labels, and exploring any other relevant patterns or characteristics of the data.
+
+#### 4.1 Heatmap of training data with NULL values
+
+<img src="https://github.com/MUmairAB/Disaster-Tweets-Classification-using-Transformers/blob/main/Images/Heatmap%20of%20training%20data%20before%20discarding%20NULL%20values.png?raw=true" style="height: 433px; width:529px;"/>
+
+#### 4.2 Heatmap of test data with NULL values
+
+<img src="https://github.com/MUmairAB/Disaster-Tweets-Classification-using-Transformers/blob/main/Images/Heatmap%20of%20test%20data%20before%20discarding%20NULL%20values.png?raw=true" style="height: 433px; width:529px;"/>
+
+#### 4.3 Heatmap of training data after removing NULL values
+
+<img src="https://github.com/MUmairAB/Disaster-Tweets-Classification-using-Transformers/blob/main/Images/Heatmap%20of%20training%20data%20after%20discarding%20NULL%20values.png?raw=true" style="height: 433px; width:529px;"/>
+
+#### 4.4 Heatmap of test data after removing NULL values
+
+<img src="https://github.com/MUmairAB/Disaster-Tweets-Classification-using-Transformers/blob/main/Images/Heatmap%20of%20test%20data%20after%20discarding%20NULL%20values.png?raw=true" style="height: 433px; width:529px;"/>
+
 
 
 ## 5. Text Vectorization
