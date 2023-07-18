@@ -43,6 +43,19 @@ During the EDA phase, the dataset is analyzed to gain insights and understanding
 
 <img src="https://github.com/MUmairAB/Disaster-Tweets-Classification-using-Transformers/blob/main/Images/Heatmap%20of%20test%20data%20after%20discarding%20NULL%20values.png?raw=true" style="height: 433px; width:529px;"/>
 
+#### 4.5 Distribution of Target values
+
+<img src="https://github.com/MUmairAB/Disaster-Tweets-Classification-using-Transformers/blob/main/Images/Distribution%20of%20Target%20values.png?raw=true" style="height: 453px; width:580px;"/>
+
+#### 4.6 Top 30 keywords in tweets
+
+<img src="https://github.com/MUmairAB/Disaster-Tweets-Classification-using-Transformers/blob/main/Images/Top%2030%20keywords%20in%20tweets.png?raw=true" style="height: 404px; width:758px;"/>
+
+#### 4.7 Top 30 Locations associated with tweets
+
+<img src="https://github.com/MUmairAB/Disaster-Tweets-Classification-using-Transformers/blob/main/Images/Top%2030%20locations%20in%20tweets%20with%200%20discarded.png?raw=true" style="height: 416px; width:758px;"/>
+
+
 
 
 ## 5. Text Vectorization
@@ -56,7 +69,11 @@ The chosen model architecture is a Transformer model, specifically designed as a
 #### 6.1 Positional Embedding layer
 Incorporating a Positional Embedding layer, the model captures the sequential order of words in tweets. This positional encoding provides crucial information about word positions, allowing the model to understand the sequential structure and process the input text effectively.
 
-#### 6.2 Model Summary
+#### 6.2 Model's plot
+
+<img src="https://github.com/MUmairAB/Disaster-Tweets-Classification-using-Transformers/blob/main/Images/Model.png?raw=true" style="height: 663px, width: 582px"/>
+
+#### 6.3 Model Summary
 ```
 Model: "model"
 _________________________________________________________________
@@ -86,11 +103,20 @@ _________________________________________________________________
 
 ## 7. Model Training and Evaluation
 
-The model is trained on the labeled dataset using **ADAM** optimization algorithms and **Binay Crossentropy**loss function. Performance metrics of accuracy is computed to evaluate the model's classification performance. Visualizations and additional evaluation techniques are employed to gain further insights into the model's effectiveness.
+The model is trained on the labeled dataset using **ADAM** optimization algorithms and **Binay Crossentropy**loss function. The performance metric of accuracy is computed to evaluate the model's classification performance. Visualizations and additional evaluation techniques are employed to gain further insights into the model's effectiveness.
+
+#### 7.1 Training and validation plot
+
+<img src="https://github.com/MUmairAB/Disaster-Tweets-Classification-using-Transformers/blob/main/Images/training%20and%20validation%20loss.png?raw=true" style="width: 567px height: 453px"/>
+
+#### 7.2 Training and validation accuracy
+
+<img src="https://github.com/MUmairAB/Disaster-Tweets-Classification-using-Transformers/blob/main/Images/training%20and%20validation%20accuracy.png?raw=true" style="width: 567px height: 453px"/>
 
 ## 8. Deployment and Application
 
-Once trained and evaluated, the model can be deployed to predict the disaster relevance of new, unseen tweets. This capability allows organizations, news agencies, and disaster relief organizations to programmatically monitor Twitter and identify tweets that require immediate attention and action.
+The trained model can be deployed to predict the disaster relevance of new, unseen tweets. This capability allows organizations, news agencies, and disaster relief organizations to programmatically monitor Twitter and identify tweets that require immediate attention and action.
 
 ## 9. Conclusion
+
 In conclusion, this project presents a machine-learning solution for tweet classification, specifically determining the disaster relevance of tweets. By leveraging the power of Transformer models and incorporating NLP techniques, the developed model can accurately classify tweets as disaster-related or non-disaster-related. The project has practical applications in real-time emergency monitoring, assisting in efficient resource allocation and timely responses to critical situations. Further enhancements and optimizations can be explored to improve the model's performance and expand its utility in disaster management.
